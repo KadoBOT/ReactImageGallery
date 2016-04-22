@@ -4,7 +4,7 @@ import GridTile from 'material-ui/lib/grid-list/grid-tile';
 import Delete from 'material-ui/lib/svg-icons/action/delete';
 import IconButton from 'material-ui/lib/icon-button';
 
-class Photos extends React.Component{
+class Photos extends React.Component {
 
   _handleDelete = () => {
     this.props.deletePicture(this.props.tile)
@@ -46,10 +46,10 @@ class Photos extends React.Component{
 }
 
 Photos.propTypes = {
-    deletePicture: React.PropTypes.func,
-    selectPicture: React.PropTypes.func,
-    editable: React.PropTypes.bool,
-    tile: React.PropTypes.object,
+    deletePicture: PropTypes.func,
+    selectPicture: PropTypes.func,
+    editable: PropTypes.bool,
+    tile: PropTypes.object
 };
 
 export default Photos;
