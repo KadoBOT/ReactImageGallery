@@ -97,7 +97,7 @@ class App extends React.Component {
     return(
       <div style={styles.root}>
         {renderSelect()}
-        <button onClick={this.reorderArray}>Reorder array</button>
+        {this.props.editable ? <button onClick={this.reorderArray}>Reorder array</button> : ''}
         <GridList cols={6} style={styles.gridList} cellHeight={200}>
           {photos.map(renderPhotos, this)}
         </GridList>

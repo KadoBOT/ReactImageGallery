@@ -22,6 +22,6 @@ const handleChange = (data) => {
 }
 
 render(
-  <App photos={photos} editable={true} onChange={handleChange}/>,
+  <App photos={photos} editable={false} onChange={handleChange}/>,
   document.querySelector('#root')
 );
